@@ -1,3 +1,3 @@
-S = input("Nhap chuoi: ")
-for ch in S:
-    print(ch.upper())
+import numpy as np
+x = np.arange(12, 38)
+print(x)
