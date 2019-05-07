@@ -1,3 +1,3 @@
-def  say_hello ():
-    a =  " Xin chào "
-    print (a)
+S = input("Nhap chuoi: ")
+for ch in S:
+    print(ch.upper())

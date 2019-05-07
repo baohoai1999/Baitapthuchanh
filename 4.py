@@ -1,6 +1,4 @@
-a =  " Xin chào các bạn! "
-def  nói ( a ):
-    a =  " Đại học Vinh "
-    in (a)
-nói (a)
-in (a)
+ds = input("Danh sach ---> ").split()
+print(ds)
+for so in ds:
+    print(so)
