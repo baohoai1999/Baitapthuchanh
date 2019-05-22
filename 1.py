@@ -1,10 +1,18 @@
-    
-import mymath
-values = [2, 4, 6, 8, 10]
-print ('Squares: ')
-for v in values:
-       print(mymath.square(v))
-print('Cubes: ')
-for v in values:
-       print(mymath.cube(v))
-print('Average: ' + str(mymath.average(values)))
+import turtle
+
+window = turtle.Screen()
+window.bgcolor('lightgreen')
+
+painter = turtle.Turtle()
+painter.fillcolor('blue')
+painter.pencolor('blue')
+painter.pensize(10)
+
+def drawsq(t, s):
+    for i in range(4):
+        t.forward(s)
+        t.left(90)
+
+for i in range (1, 180):
+    painter.left(18)
+    drawsq(painter, 200)

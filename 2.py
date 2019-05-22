@@ -1,11 +1,11 @@
-import datetime as dt
-format = '%Y-%m-%dT%H:%M:%S'
-t1 = dt.datetime.strptime('2018-10-12T4:45:52', format)
-print('Day ' + str(t1.day))
-print('Month ' + str(t1.month))
-print('Minute ' + str(t1.minute))
-print('Second ' + str(t1.second))
-# Số ngày khác nhau
-t2 = dt.datetime.now()
-diff = t2 - t1
-print('Số ngày chênh lệch: ' + str(diff.days))
+import turtle, random
+colors = ["red", "green", "blue", "orange", "purple", "pink", "yellow"]
+painter = turtle.Turtle()
+painter.pensize(3)
+for i in range(10):
+    color = random.choice(colors)
+    painter.pencolor(color)
+    painter.circle(100)
+    painter.right(30)
+    painter.left(60)
+    painter.setposition(0, 0)
